@@ -1,0 +1,104 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #8e2de2, #4a00e0);
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+.form-container {
+    padding: 30px;
+    transition: transform 0.5s ease;
+}
+
+form {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+}
+
+form.active {
+    display: flex;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    background: #4a00e0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #3a00c0;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+}
+
+p span {
+    color: #4a00e0;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+p span:hover {
+    color: #3a00c0;
+}
+
+.secured-page {
+    display: none;
+    text-align: center;
+    padding: 30px;
+}
+
+.secured-page h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.secured-page button {
+    padding: 10px;
+    background: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.secured-page button:hover {
+    background: #c9302c;
+}
